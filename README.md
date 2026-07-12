@@ -1,2 +1,2 @@
 # Atlanta-Nami-Club
-Nami.Emory Central Site
+Nami.Emory Central Site v2
