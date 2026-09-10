@@ -1,12 +1,11 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
     font-size: 16px;
     color: #265b7c;
-    line-height: 2;
+    line-height: 1.5;
 }
 header{
-    Text-align: center;
-
+    Text-align: Left;
 }
 
 h1{
@@ -16,20 +15,17 @@ h1{
 }
 
 h2{
-    font-size: 28px;
+    font-size: 38px;
     color: #f17341;
     text-align: right;
 }
 
 h3 {
     font-size: 24px;
-    color: #e4a826;
+    color: #f17341;
     text-align: right;
 }
 
-body{
-    background-color: #c52626;
-}
 
 p{
     font-size: 18px;
