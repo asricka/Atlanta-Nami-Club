@@ -26,3 +26,13 @@ h3 {
     color: #e4a826;
     text-align: right;
 }
+
+body{
+    background-color: #c52626;
+}
+
+p{
+    font-size: 18px;
+    color: #000000;
+    text-align: justify;
+}
