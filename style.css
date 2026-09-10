@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #265b7c;
+    line-height: 1.5;
+}
+header{
+    Text-align: center;
+
+}
+
+h1{
+    font-size: 36px;
+    color: #040404;
+    text-align: center;
+}
+
+h2{
+    font-size: 28px;
+    color: #265b7c;
+    text-align: right;
+}
+
+h3 {
+    font-size: 24px;
+    color: #040404;
+    text-align: right;
+}
