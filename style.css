@@ -1,46 +1,56 @@
-body {
-    font-family: sans-serif;
-    font-size: 16px;
-    color: #265b7c;
-    line-height: 1.5;
+head{
+    text-align: Center;
+    position: sticky;
+    top: 0;
+    background-color: #d28e00;
 }
 
 header{
     Text-align: Left;
     position: fixed;
     top: 0;
-    background-color: #376bd2;
-    width: 100%;
+    background-color: #002878;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.5;
 }
 
 h1{
     font-size: 36px;
-    color: #040404;
+    color: #002878;
     text-align: center;
 }
 
 h2{
     font-size: 38px;
-    color: #f17341;
+    color: #d28e00;
     text-align: right;
 }
 
 h3 {
     font-size: 24px;
-    color: #f17341;
+    color: #d2b000;
     text-align: right;
 }
 
-
 p{
     font-size: 18px;
-    color: #000000;
+    color: #333333;
     text-align: justify;
 }
 
-.sticky{
+.sticky_bottom{
     position: sticky;
-    top: 0;
+    bottom: 0;
+}
+
+.sticky_top{
+    position: sticky;
+    bottom: 0;
 }
 
 .fixed{
