@@ -6,12 +6,11 @@ head{
 }
 
 header{
-    Text-align: Left;
     position: fixed;
+    width: 200%;
     top: 0;
     background-color: #002878;
     color: white;
-    width: max-content;
 }
 
 content{
@@ -26,19 +25,19 @@ content{
 h1{
     font-size: 36px;
     color: #002878;
-    text-align: center;
+    text-align: left;
 }
 
 h2{
     font-size: 38px;
     color: #d28e00;
-    text-align: right;
+    text-align: left;
 }
 
 h3 {
     font-size: 24px;
     color: #d2b000;
-    text-align: right;
+    text-align: left;
 }
 
 p{
@@ -54,7 +53,7 @@ p{
 
 .sticky_top{
     position: sticky;
-    bottom: 0;
+    top: 0;
 }
 
 .fixed{
