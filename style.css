@@ -9,6 +9,7 @@ header{
     position: fixed;
     width: 200%;
     top: 0;
+    left: 0;
     background-color: #002878;
     color: white;
 }
@@ -59,4 +60,25 @@ p{
 .fixed{
     position: fixed;
     top: 0;
+}
+
+.collapsable {
+    background-color: #002878;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.active, .collapsable:hover {
+    background-color: #d28e00;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
 }
