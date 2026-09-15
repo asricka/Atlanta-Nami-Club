@@ -8,6 +8,7 @@ head{
 header{
     position: fixed;
     width: 200%;
+    Height: 50px;
     top: 0;
     left: 0;
     background-color: #002878;
