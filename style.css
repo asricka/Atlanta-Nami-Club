@@ -2,7 +2,6 @@ head{
     text-align: Center;
     position: sticky;
     top: 0;
-    background-color: #d28e00;
 }
 
 header{
@@ -11,16 +10,14 @@ header{
     Height: 50px;
     top: 0;
     left: 0;
-    background-color: #002878;
-    color: white;
+    color: #d28e00;
 }
 
 content{
     text-align: center;
     position: relative;
     top: 50px;
-    background-color: #d28e00;
-    color: white;
+    color: #444;
     width: max-content;
 }
 
@@ -76,10 +73,4 @@ p{
 }
 .active, .collapsable:hover {
     background-color: #d28e00;
-}
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: #f1f1f1;
 }
