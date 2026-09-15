@@ -40,7 +40,7 @@ body{
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 40px;
 }
 
 h1{
@@ -57,6 +57,12 @@ h2{
 
 h3 {
     font-size: 24px;
+    color: #d2b000;
+    text-align: left;
+}
+
+h4 {
+    font-size: 20px;
     color: #d2b000;
     text-align: left;
 }
@@ -82,17 +88,17 @@ p{
     top: 0;
 }
 
-.collapsable {
+.collapsible {
     background-color: #002878;
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 100%;
+    width: 80%;
     border: none;
-    text-align: left;
+    text-align: center;
     outline: none;
     font-size: 15px;
 }
 .active, .collapsable:hover {
-    background-color: #d28e00;
+    background-color: #5b5c5e;
 }
