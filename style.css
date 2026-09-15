@@ -13,12 +13,34 @@ header{
     color: #d28e00;
 }
 
+nav{
+    Position: sticky;
+    top: 0;
+    overflow: hidden;
+}
+
+nav a{
+    float: right;
+    display: block;
+    color: #d28e00;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
 content{
     text-align: center;
     position: relative;
     top: 50px;
     color: #444;
     width: max-content;
+}
+
+body{
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
 }
 
 h1{
