@@ -13,6 +13,7 @@ header{
     color: #d28e00;
 }
 
+
 nav{
     Position: sticky;
     top: 0;
@@ -22,10 +23,15 @@ nav{
 nav a{
     float: right;
     display: block;
-    color: #d28e00;
-    text-align: center;
-    padding: 14px;
+    color: #f2f2f2;
+    text-align: left;
+    padding: 15px;
     text-decoration: none;
+}
+
+.nav a:hover{
+    background-color: #eeeeee99;
+    color: black;
 }
 
 content{
@@ -93,12 +99,40 @@ p{
     color: white;
     cursor: pointer;
     padding: 18px;
-    width: 80%;
+    width: 100%;
     border: none;
-    text-align: center;
+    text-align: left;
     outline: none;
     font-size: 15px;
 }
-.active, .collapsable:hover {
+/* switch between 0 and 150 overflow when clicked */
+.collapsible__button--active + .collapsable__content {
+    display: block;
+}
+/* botton arrow image */
+.collapsible__button::after {
+    content: '\25be';
+    float: right;
+}
+.collapsible__button--active::after{
+    content: "\25b4";
+}
+/* button hover and active shade change */
+.active, .collapsible:hover {
     background-color: #5b5c5e;
 }
+
+.collapsible__content {
+    /* overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out; */
+    padding: 0 15px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+
+    display: none;
+    overflow: auto;
+}
+
+

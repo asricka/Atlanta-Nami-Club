@@ -10,7 +10,7 @@
     
     <header>
         <div id="nav">
-            <a href="./index.html">What is NAMI?</a>
+            <a href="./index.html">Home</a>
             <a href="./Current_Events.html">Nami @ Emory</a>
             <a href="./resources.html">Resources</a>
             <a href="">Newsletter</a>
@@ -28,15 +28,33 @@
             <video src="https://youtu.be/BZNw3Ldtxrg?si=I5NDy3yon-_32XM3" height="240" width="320" controls>Video not supported</video>
         </Figure>
 
-        <h3><strong>Who we are</strong></h3>
+        <h2><strong>What is NAMI?</strong></h2>
         <h1>
-            NAMI is the national alliance on mental illness. We are a grassroots mental health organization dedicated to building better lives for the millions of Americans affected by mental illness. 
+            NAMI is the national alliance on mental illness. NAMI is a grassroots mental health organization dedicated to building better lives for the millions of Americans affected by mental illness. 
         </h1>
-        <p> Our alliance includes more than 650 NAMI state organizations and affiliates who work in <em>your</em> commpunity. NAMI advocates for access to services, treatment, supports, and research and is steadfast in its commitment to raising awareness and building a community of hope for all of those in need.</p>
-        <h3>Nami @ Emory </h3>
+        <h3> Our alliance includes more than 650 NAMI state organizations and affiliates who work in <em>your</em> commpunity. NAMI advocates for access to services, treatment, supports, and research and is steadfast in its commitment to raising awareness and building a community of hope for all of those in need.</h3>
+        <h2>What is Nami Emory?</h2>
+        <h1>
+            NAMI Emory is a non-profit organization and local afffiliate of NAMI that provides education, support, and advocacy for individuals and families affected by mental illness in the Emory community and beyond.
+        </h1>
         
 
        <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+       <script>
+            document.querySelectorAll(".collapsible").forEach(button => {
+                button.addEventListener("click", () => {
+                     button.classList.toggle("active");
+                    //  what is uncommented below is an animation that makes the collapsible content appear and disappear, but it is not working as intended. I will look at fixing this in the future.
+                    // const content = button.nextElementSibling;
+
+                    // if (content.style.display === "block") {
+                    //     content.style.display = "none";
+                    // } else {
+                    //     content.style.display = "block";
+                    // }
+                });
+            });
+        </script>
     <body>
 
 

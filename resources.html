@@ -10,7 +10,7 @@
 
     <header>
         <div id="nav">
-            <a href="./index.html">What is NAMI?</a>
+            <a href="./index.html">Home</a>
             <a href="./Current_Events.html">Nami @ Emory</a>
             <a href="./resources.html">Resources</a>
             <a href="">Newsletter</a>
@@ -35,24 +35,27 @@
             </div>
 
         </div>
-    </body>
 
-    <body>
-            <button type="button" class="collapsible">Open Collapsible</button>
-            <div class="Content">
-                <h2>On Campus at Emory</h2>
-                <div class="content">
-                </div><div class="sticky_top"><h3>Time Sensitive/Urgent resources</h3></div>   
-                    <ul>
-                        <li><a href="https://app.timelycare.com/auth/login?campaign=vanitylink">TimelyCare</a>
-                            <p>Offers 3 features: <ul><li>Talk now</li><li>Connection to Counseling</li><li>Connection to a Psychiatrist</li></ul></p></li>
+            <div class="collabsible">
+                <button type="button" class="collapsible">Open Collapsible</button>
+                <div class="Content">
+                    <h2>On Campus at Emory</h2>
+                    <div class="content">
+                    </div><div class="sticky_top"><h3>Time Sensitive/Urgent resources</h3></div>   
+                        <ul>
+                            <li><a href="https://app.timelycare.com/auth/login?campaign=vanitylink">TimelyCare</a>
+                                <p>Offers 3 features: <ul><li>Talk now</li><li>Connection to Counseling</li><li>Connection to a Psychiatrist</li></ul></p></li>
 
-                        <li><p>Students who are experiencing a mental health crisis call the <a href="https://counseling.emory.edu">Counseling and Psychological Services</a> After Hours Line at 404-727-7450 and press 1.</p> 
-                            <p>CAPS has expanded after-hours support to provide Emory students with confidential assistance 24 hours a day, 7 days a week (24/7), year-round. Now, a student can call CAPS and speak immediately with a mental health professional to identify their needs, get support, and help develop a plan for next steps.</p>
+                            <li><a href="https://counseling.emory.edu">Counseling and Psychological Services <strong>CAPS</strong></a>
+                                <p>Students who are experiencing a mental health crisis call the CAPS after Hours Line at 404-727-7450 and press 1. CAPS expanded after-hours support provides Emory students with access to confidential assistance 24 hours a day, 7 days a week (24/7), year-round. Now, a student can call CAPS and speak immediately with a mental health professional to identify their needs, get support, and help develop a plan for next steps.</p></li>
+
+                            <li>988
+                                <p>Offers access to the Suicide and Crisis Lifeline. Call or text 988, or chat via 988lifeline.org</p>
                             </li>
-                    </ul>
-                </div>
-
+                        </ul>
+                    </div>
+            </div>
+                
                 
                 <div class="content">
                 <div class="sticky_top"><h3>Non-Urgent Resources</h3></div>
@@ -73,23 +76,17 @@
                        
 
                     
-            </div>
-    </body>
-
-    <body>       
+                </div>
+       
 
             <div class="sticky_top">
                 <h2>Off-Campus</h2></li>
             </div>
-    </body>  
-
-    <body> 
+ 
             <div class="sticky_top">  
                 <h2>Cost <em><strong>Insurance Recommended</strong></em></h2>
             </div>
-    </body> 
 
-    <body> 
             <div class="sticky_top">
                 <h2>No Cost</h2>
                 <div class="content">
@@ -99,8 +96,24 @@
 
                 </div>
             </div>    
-                  
+               
+            
+        <script>
+            document.querySelectorAll(".collapsible").forEach(button => {
+                button.addEventListener("click", () => {
+                     button.classList.toggle("active");
+                    //  what is uncommented below is an animation that makes the collapsible content appear and disappear, but it is not working as intended. I will look at fixing this in the future.
+                    // const content = button.nextElementSibling;
+
+                    // if (content.style.display === "block") {
+                    //     content.style.display = "none";
+                    // } else {
+                    //     content.style.display = "block";
+                    // }
+                });
+            });
+        </script>
     </body>
 
-    
+
 </html>

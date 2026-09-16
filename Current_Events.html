@@ -10,7 +10,7 @@
     
     <header>
         <div id="nav">
-            <a href="./index.html">What is NAMI?</a>
+            <a href="./index.html">Home</a>
             <a href="./Current_Events.html">Nami @ Emory</a>
             <a href="./resources.html">Resources</a>
             <a href="">Newsletter</a>
@@ -20,12 +20,34 @@
     </header> 
 
     <body>
-        <button type="button" class="collapsible">Open Collapsible</button>
-        <div class="content">
-            <p>Peer Connection support group </p>
-            <ul>
-                Mondays 5:00-6:30pm
-            </ul>
-            <p>Upcoming Events</p>
+        <div class="collapsible">
+            <button type="button" class="collapsible">Expand Collapsible</button>
+            <div class="collabsible__content">
+                <p>Peer Connection support group 
+                <ul>
+                    <li>Mondays 5:00-6:30pm</li>
+                </ul></p>
+                <p>Upcoming Events</p>
+            </div>
         </div>
+
+
+
+
+        <script>
+            document.querySelectorAll(".collapsible").forEach(button => {
+                button.addEventListener("click", () => {
+                     button.classList.toggle("active");
+                    //  what is uncommented below is an animation that makes the collapsible content appear and disappear, but it is not working as intended. I will look at fixing this in the future.
+                    // const content = button.nextElementSibling;
+
+                    // if (content.style.display === "block") {
+                    //     content.style.display = "none";
+                    // } else {
+                    //     content.style.display = "block";
+                    // }
+                });
+            });
+        </script>
     </body>
+
