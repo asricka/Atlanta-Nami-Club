@@ -130,43 +130,49 @@ p{
     top: 0;
 }
 
-.collapsible {
+.collapsible__button {
+    display: block;
     background-color: #002878;
     color: white;
     cursor: pointer;
-    padding: 18px;
+    padding: 15px;
     width: 100%;
     border: none;
-    text-align: left;
     outline: none;
+    text-align: left;
+    transition: 0.2s;
     font-size: 15px;
 }
+
 /* switch between 0 and 150 overflow when clicked */
 .collapsible__button--active + .collapsable__content {
     display: block;
 }
-/* botton arrow image */
+
+/* botton plus sign image */
 .collapsible__button::after {
-    content: '\25be';
+    content: '\002b';
     float: right;
+    transform: scale(1.5);
 }
-.collapsible__button--active::after{
-    content: "\25b4";
-}
+/* styling for the after effects of button image */
+.collapsable__button--active{background-color: #5b5c5e;}
+.collapsible__button--active::after{content: "\25b4";}
+
 /* button hover and active shade change */
-.active, .collapsible:hover {
+/* .active, .collapsible__button:hover {
     background-color: #5b5c5e;
-}
+} */
 
 .collapsible__content {
-    /* overflow: hidden;
+    /* THIS IS FOR JSoverflow: hidden;
     max-height: 0;
     transition: max-height 0.2s ease-out; */
     padding: 0 15px;
     font-size: 14px;
     font-family: Arial, sans-serif;
     background-color: #eeeeee;
-
+    /* beow is content that helps with the appear out of thin air effect */
     display: none;
     overflow: auto;
 }
