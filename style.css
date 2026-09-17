@@ -15,13 +15,15 @@ header{
     justify-content: space-between;
 }
 
-
+.logo{
+    order: 1;
+    margin-right: auto;
+}
 .nav{
     Position: sticky;
     top: 0;
     overflow: hidden;
 }
-
 .nav ul{
     list-style-type: none;
     background-color: #c2dceb;
@@ -29,6 +31,7 @@ header{
     margin: 0%;
     /* below is the code to make the navbar horizontal */
     overflow: hidden;
+    order: 2;
 }
 
 .nav a{
@@ -49,6 +52,21 @@ header{
 
 .nav__action li{
     float: right;
+}
+
+button{
+    padding: 9px;
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.cta{
+    order: 3;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 
