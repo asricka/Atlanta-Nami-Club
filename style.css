@@ -46,6 +46,11 @@ header{
     float: left;
 }
 
+.nav__action li{
+    float: right;
+}
+
+
 content{
     text-align: center;
     position: relative;
