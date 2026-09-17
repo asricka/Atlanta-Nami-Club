@@ -14,17 +14,25 @@ header{
 }
 
 
-nav{
+.nav{
     Position: sticky;
     top: 0;
     overflow: hidden;
 }
 
-nav a{
-    float: right;
+.nav ul{
+    list-style-type: none;
+    background-color: #c2dceb;
+    padding: 0%;
+    margin: 0%;
+    /* below is the code to make the navbar horizontal */
+    overflow: hidden;
+}
+
+.nav a{
     display: block;
     color: #f2f2f2;
-    text-align: left;
+    text-align: center;
     padding: 15px;
     text-decoration: none;
 }
@@ -32,6 +40,10 @@ nav a{
 .nav a:hover{
     background-color: #eeeeee99;
     color: black;
+}
+    /* below is the code to make the navbar horizontal */
+.nav li{
+    float: left;
 }
 
 content{
