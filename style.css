@@ -10,7 +10,9 @@ header{
     Height: 50px;
     top: 0;
     left: 0;
-    color: #d28e00;
+    /* new additions to review */
+    background-color: #c2dceb;
+    justify-content: space-between;
 }
 
 
@@ -30,7 +32,6 @@ header{
 }
 
 .nav a{
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 15px;
