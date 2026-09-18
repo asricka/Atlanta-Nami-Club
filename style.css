@@ -146,7 +146,7 @@ p{
 }
 
 /* switch between 0 and 150 overflow when clicked */
-.collapsible__button--active + .collapsable__content {
+.collapsible__button--active + .collapsible__content {
     display: block;
 }
 
