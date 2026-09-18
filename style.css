@@ -157,7 +157,7 @@ p{
     transform: scale(1.5);
 }
 /* styling for the after effects of button image */
-.collapsable__button--active{background-color: #5b5c5e;}
+.collapsible__button--active{background-color: #5b5c5e;}
 .collapsible__button--active::after{content: "\25b4";}
 
 /* button hover and active shade change */
