@@ -85,13 +85,13 @@
                 <div class="content">
                     <div class="content"><h3>Non-Urgent Resources</h3></div>
 
-                        <div class="sticky_top" >Group Resources</div>
+                        <div class="content" >Group Resources</div>
                             <ul>   
                                 <li><a href="https://success.emory.edu">Student Case Management and Intervention Resources</a></li>
                                 <li><a href="https://wellbeing.emory.edu">Center for Student Wellbeing</a></li>
                             </ul>
                             
-                        <div class="sticky_top" >Individual Resources</div>
+                        <div class="content" >Individual Resources</div>
                             <ul>
                                 <li><a href="https://wellbeing.emory.edu">Center for Student Wellbeing</a></li>
                             </ul>
@@ -173,9 +173,9 @@
         </div>
 
         <script>
-            document.querySelectorAll(".collapsible").forEach(button => {
-                button.addEventListener("click", () => {
-                     button.classList.toggle("active");
+            document.querySelectorAll('.collapsible').forEach(button => {
+                button.addEventListener('click', () => {
+                     button.classList.toggle('collapsible__content--active');
                     //  what is uncommented below is an animation that makes the collapsible content appear and disappear, but it is not working as intended. I will look at fixing this in the future.
                     // const content = button.nextElementSibling;
 
