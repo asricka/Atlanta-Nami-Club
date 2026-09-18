@@ -3,12 +3,14 @@ head{
     position: fixed;
     top: 0;
 }
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #c2dceb;
+}
 header{
     position: fixed;
-    width: 200%;
-    Height: 40px;
-
     /* new additions to review */
     display: flex;
     background-color: #c2dceb;
@@ -16,8 +18,9 @@ header{
     padding: 30px 10%;
 }
 
-.header li, a, button{
+li, a, button{
     font-family: Arial, sans-serif;
+    font-weight: 400;
     font-size: 16px;
     color: #f2f2f2;
     text-decoration: none;
@@ -29,6 +32,9 @@ header{
     cursor: pointer
 }
 
+.nav{
+    order: 2;
+}
 .nav__links{
     list-style: none;
 }
@@ -43,7 +49,11 @@ header{
     color: #eeeeee99
 }
 
-.nav__button{
+.cta{
+    order: 3;
+}
+
+button{
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
@@ -51,9 +61,10 @@ header{
     cursor: pointer;
     transition: all 0.3s ease 0s;
 }
-.nav__button:hover{
+button:hover{
     background-color: rgba(0, 136, 169, 0.8);
 }
+
 /*
 .nav{
     Position: sticky;
