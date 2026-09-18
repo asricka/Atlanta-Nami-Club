@@ -1,26 +1,60 @@
 head{
-    text-align: Center;
-    position: sticky;
+    text-align: center;
+    position: fixed;
     top: 0;
 }
 
 header{
     position: fixed;
     width: 200%;
-    Height: 50px;
-    top: 0;
-    left: 0;
+    Height: 40px;
+
     /* new additions to review */
+    display: flex;
     background-color: #c2dceb;
     justify-content: space-between;
+    padding: 30px 10%;
 }
 
-
+.header li, a, button{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #f2f2f2;
+    text-decoration: none;
+}
 
 .logo{
     order: 1;
     margin-right: auto;
+    cursor: pointer
 }
+
+.nav__links{
+    list-style: none;
+}
+.nav__links{
+    display: inline-block;
+    padding: 0px 20px;
+}
+.nav__links li, a{
+    transition: all 0.3s ease 0s;
+}
+.nav__links a:hover{
+    color: #eeeeee99
+}
+
+.nav__button{
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+.nav__button:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+}
+/*
 .nav{
     Position: sticky;
     top: 0;
@@ -31,7 +65,7 @@ header{
     background-color: #c2dceb;
     padding: 0%;
     margin: 0%;
-    /* below is the code to make the navbar horizontal */
+    // below is the code to make the navbar horizontal 
     overflow: hidden;
     order: 2;
 }
@@ -46,7 +80,7 @@ header{
     background-color: #eeeeee99;
     color: black;
 }
-    /* below is the code to make the navbar horizontal */
+    // below is the code to make the navbar horizontal 
 .nav li{
     float: left;
 }
@@ -69,6 +103,7 @@ button{
     cursor: pointer;
     margin-left: auto;
 }
+*/
 
 
 .content{
