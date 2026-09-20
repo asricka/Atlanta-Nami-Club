@@ -1,0 +1,59 @@
+<!DOCTYPE = html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>NAMI.Emory</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+
+<header>
+    <div class="nav">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./Current_Events.html">NAMI @ Emory</a></li>
+            <li><a href="./resources.html">Resources</a></li>
+            <li><a href="">Newsletter</a></li>
+            <li><a href="" class="cta"><button type="button">Get Involved</button> </a></li>
+            <li><a href="./login.html">login</a></li>
+        </ul>
+    </div>
+</header>
+
+<Login_body>
+    <div class="container">
+        <!-- login divider -->
+        <div class="form-box active" id="login-form">
+            <form action="">
+                <h2>Login</h2>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="password" name="Password" placeholder="Password" required>
+                <button type="submit" name="Login">Login</button>
+                <p>Don't have an account? <a href="#" onclick="showForm('register-form')">Register</a></p>
+            </form>
+        </div>
+
+        <!--register divider  -->
+        <div class="form-box" id="register-form">
+            <form action="">
+                <h2>Register</h2>
+                <input type="name" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="password" name="Password" placeholder="Password" required>
+                <select name="role" required>
+                    <option value="">--Select Role--</option>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit" name="register">Register</button>
+                <p>Already have an account? <a href="#" onclick="showform('login-form')">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="login_script.js"></script>
+</Login_body>
+
+</html>
