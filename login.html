@@ -1,7 +1,6 @@
 <!DOCTYPE = html>
 
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
@@ -10,27 +9,28 @@
 </head>
 
 <header>
-    <div class="nav">
+    <nav class="navbar">
+        <div class="logo"><img src="https://www.svgrepo.com/show/483886/brain-illustration-12.svg" ></div>
         <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./Current_Events.html">NAMI @ Emory</a></li>
             <li><a href="./resources.html">Resources</a></li>
             <li><a href="">Newsletter</a></li>
-            <li><a href="" class="cta"><button type="button">Get Involved</button> </a></li>
-            <li><a href="./login.html">login</a></li>
+            <button><a href="#">Get Involved</a></button>
+            <button><a href="./login.html">Sign in</a></button>
         </ul>
-    </div>
+    </nav>
 </header>
 
 <body>
     <div class="container">
         <!-- login divider -->
-        <div class="form-box active" id="login-form">
+        <div class="form-box active" id="Sign_in-form">
             <form action="">
-                <h2>Login</h2>
+                <h2>Sign in</h2>
                 <input type="email" name="Email" placeholder="Email" required>
                 <input type="password" name="Password" placeholder="Password" required>
-                <button type="submit" name="Login">Login</button>
+                <button type="submit" name="Login">Sign in</button>
                 <p>Don't have an account? <a href="#" onclick="showForm('register-form')">Register</a></p>
             </form>
         </div>
@@ -48,7 +48,7 @@
                     <option value="admin">Admin</option>
                 </select>
                 <button type="submit" name="register">Register</button>
-                <p>Already have an account? <a href="#" onclick="showform('login-form')">Login</a></p>
+                <p>Already have an account? <a href="#" onclick="showform('Sign_in-form')">Sign in</a></p>
             </form>
         </div>
     </div>
