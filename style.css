@@ -9,6 +9,8 @@ header{
     /* font-size: 16px;
     width: 100%;
     background-color: #c2dceb;*/ 
+    position: fixed;
+    width: 100%;
 }
 
 .logo{
@@ -78,6 +80,8 @@ header{
 
 .body{
     background-color: #ffffff;
+    padding-top: 70px;
+    /* padding-bottom: 70px; */
 }
 
 
@@ -99,7 +103,7 @@ h1{
 h2{
     font-size: 38px;
     color: #d28e00;
-    text-align: left;
+    text-align: center;
 }
 
 h3 {
@@ -138,6 +142,16 @@ p{
 
 /* For an accordion */
 
+.collapsible{
+    font-size: 16px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.collapsible ul, li{
+    padding-left: 15px;
+} 
+
 .collapsible__button {
     display: block;
     background-color: #002878;
@@ -155,6 +169,7 @@ p{
 /* botton plus sign image */
 .collapsible__button::after {
     content: '\002b';
+    align-content: middle;
     float: right;
     transform: scale(1.5);
 }
@@ -177,7 +192,13 @@ p{
     padding: 0 15px;
     font-family: Arial, sans-serif;
     background: #eeeeee;
+    width: 100%;
+    align-items: center;
     /* beow is content that helps with the appear out of thin air effect */
     display: none;
     overflow: auto;
+}
+
+.collapsible__content_show{
+    display: block;
 }
