@@ -32,6 +32,9 @@ function costCollapsible(){
 function noCostCollapsible(){
     document.getElementById("noCostCollapsible").classList.toggle("collapsible__content_show");
 }
+function capsCollapsible(){
+    document.getElementById("capsCollapsible").classList.toggle("collapsible__content_show");
+}
 
 //My Buttons for collapsibles in NAMI @ Emory
 function getInvolvedCollapsible(){
