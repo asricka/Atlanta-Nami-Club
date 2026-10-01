@@ -13,7 +13,7 @@
             <img class="logo" src="https://www.svgrepo.com/show/483886/brain-illustration-12.svg" width="40" height="40" alt="logo">
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./Current_Events.html">Nami @ Emory</a></li>
+                <li><a href="./Current_Events.html">NAMI @ Emory</a></li>
                 <li><a href="./resources.html">Resources</a></li>
                 <li><a href="">Newsletter</a></li>
                 <li><a href="./login.html">login</a></li>
@@ -27,8 +27,8 @@
 
     <div class="body">
         <div class="collapsible">
-            <button type="button" onclick="collapsible()" class="collapsible__button">Expand Collapsible</button>
-            <div class="collapsible__content">
+            <button type="button" onclick="getInvolvedCollapsible()" class="collapsible__button">Expand Collapsible</button>
+            <div class="collapsible__content" id="getInvolvedCollapsible">
                 <p>Peer Connection support group
                     <ul>
                         <li>Mondays 5:00-6:30pm</li>
@@ -41,21 +41,7 @@
 
 
 
-        <script>
-            document.querySelectorAll('.collapsible__content').forEach(button => {
-                button.addEventListener('click', () => {
-                     button.classList.toggle('collapsible__button--active');
-                    //  what is uncommented below is an animation that makes the collapsible content appear and disappear, but it is not working as intended. I will look at fixing this in the future.
-                    // const content = button.nextElementSibling;
-
-                    // if (content.style.display === "block") {
-                    //     content.style.display = "none";
-                    // } else {
-                    //     content.style.display = "block";
-                    // }
-                });
-            });
-        </script>
+        <script src="style.js"></script>
     </div>
 
 </html>

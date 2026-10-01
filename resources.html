@@ -13,7 +13,7 @@
             <img class="logo" src="https://www.svgrepo.com/show/483886/brain-illustration-12.svg" width="40" height="40" alt="logo">
             <ul>
                 <li><a href="./index.html">Home</a></li>
-                <li><a href="./Current_Events.html">Nami @ Emory</a></li>
+                <li><a href="./Current_Events.html">NAMI @ Emory</a></li>
                 <li><a href="./resources.html">Resources</a></li>
                 <li><a href="">Newsletter</a></li>
                 <li><a href="./login.html">login</a></li>
@@ -27,11 +27,9 @@
     
     <div class="body">
         <div>
-            <div class="Content">
-                <h2>
-                    Identity specific resources for Nami.E
-                </h2>
-                <div class="content">
+            <div class="collapsible">
+                <button type="button" onclick="identitySpecificCollapsible()" class="collapsible__button"><h2>Identity specific resources for Nami.E</h2></button>
+                <div class="collapsible__content" id="identitySpecificCollapsible">
                     <ul>
                         <li><p>Target Audience: <strong>Women</strong></p>
                             <ul>
@@ -107,8 +105,9 @@
             <!-- end divider for collabsible below -->
             </div>
 
-            <div class="Content">
-                <h2>Off-Campus</h2>
+            <div class="collapsible">
+                <button type="button" onclick="offCampusCollapsible()" class="collapsible__button"><h2>Off-Campus</h2></button>
+                <div class="collapsible__content" id="offCampusCollapsible">
                     <ul>
                         <li><a href="https://timewellnessga.com/programs/" target="_blank">Time Wellness Georgia <em>Chambless, GA</em></a>
                             <p>Offers personalized care in tailored to individualized needs through different mediums</p>
@@ -139,27 +138,33 @@
                         </li>
                         <li><a href="https://chris180.org/school-based-services/" target="_blank">Chris 180</a></li>
                     </ul>
+                </div>
             </div>
             
-            <div class="sticky_top">  
-                <h2>NAMI Resources Internal Use</h2>
+            <div class="collapsible">  
+                <button onclick="resource_collapsible()" type="button" class="collapsible__button"><h2>NAMI Resources Internal Use</h2></button>
+                <div class="collapsible__content" id="resourcescollapsible">
                     <ul>
                         <li><a href="https://www.nami.org/wp-content/uploads/2023/07/GeorgiaStateFactSheet.pdf" target="_blank">NAMI Mental Health Fact Sheet</a></li>
                         <li><a href="https://www.nami.org/about-mental-illness/mental-health-by-the-numbers/infographics-fact-sheets/" target="_blank"></a>NAMI Inforgraphics</li>
                         <li><a href="https://my.nami.org/NAMI/media/NAMInet/Outreach-Partnerships/NOC-College-Club-Promotion-Flyer.pdf" target="_blank">NAMI On-Campus Sheet</a></li>
-                        <li><a href="https://collegeguide.nami.org/about-this-guide/?section=mental-health-statistics">College Guide</a>
+                        <li><a href="https://collegeguide.nami.org/about-this-guide/?section=mental-health-statistics" target="_blank">College Guide</a>
                             <ul><li>Welcome to our Mental Health College Guide for Students and Educators. Discover resources, practices, collaboration strategies for mental health and wellness in college.</li></ul>
                         </li>
                     </ul>
+                </div>
             </div>
 
-            <div class="Content">  
-                <h2>Cost <em><strong>Insurance Recommended</strong></em></h2>
+            <div class="collapsible">
+                <button type="button" onclick="costCollapsible()" class="collapsible__button"><h2>Cost <em><strong>Insurance Recommended</strong></em></h2></button>  
+                <div class="collapsible__content" id="costCollapsible">
+                    <p>Test</p>
+                </div>
             </div>
 
-            <div class="Content">
-                <h2>No Cost</h2>
-                <div class="content">
+            <div class="collapsible">
+                <button type="button" onclick="noCostCollapsible()" class="collapsible__button"><h2>No Cost</h2></button>
+                <div class="collapsible__content" id="noCostCollapsible">
                     <ul>
                         <li><a href="https://claratel.org/behavioral-health/" target="_blank">Claratel</a>
                             <p>Non-profit org tailored towards therapy services and medication management</p>

@@ -9,6 +9,9 @@ header{
     /* font-size: 16px;
     width: 100%;
     background-color: #c2dceb;*/ 
+    position: fixed;
+    width: 100%;
+
 }
 
 .logo{

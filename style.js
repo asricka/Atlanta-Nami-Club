@@ -12,6 +12,28 @@
 //        });
 //     });
 
+
+//My buttons for collapsibles in Resources
 function collapsible(){
     document.getElementById("mycollapsible").classList.toggle("collapsible__content_show");
+}
+function resource_collapsible(){
+    document.getElementById("resourcescollapsible").classList.toggle("collapsible__content_show");
+}
+function offCampusCollapsible(){
+    document.getElementById("offCampusCollapsible").classList.toggle("collapsible__content_show");
+}
+function identitySpecificCollapsible(){
+    document.getElementById("identitySpecificCollapsible").classList.toggle("collapsible__content_show");
+}
+function costCollapsible(){
+    document.getElementById("costCollapsible").classList.toggle("collapsible__content_show");
+}
+function noCostCollapsible(){
+    document.getElementById("noCostCollapsible").classList.toggle("collapsible__content_show");
+}
+
+//My Buttons for collapsibles in NAMI @ Emory
+function getInvolvedCollapsible(){
+    document.getElementById("getInvolvedCollapsible").classList.toggle("collapsible__content_show");
 }
