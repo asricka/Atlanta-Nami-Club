@@ -51,3 +51,7 @@ function myFunction() {
     x.className = "nav";
   }
 }
+
+function navDropBtn(){
+    document.getElementById("myDropDwn").classList.toggle("dropdown-content-show");
+}
