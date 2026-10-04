@@ -6,29 +6,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Nami.E Website</title>
         <link  rel="stylesheet"  href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     </head>
     
     <header>
-        <div class="nav">
+        
+        <div class="nav" id="myTopnav">
             <img class="logo" src="https://www.svgrepo.com/show/483886/brain-illustration-12.svg" width="40" height="40" alt="logo">
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./Current_Events.html">NAMI @ Emory</a></li>
-                <li><a href="./resources.html">Resources</a></li>
-                <li><a href="">Newsletter</a></li>
-                <li><a href="./login.html">login</a></li>
-                <li><button>Get Involved!</button></li>
-            </ul>
+            
+                <a href="./index.html">Home</a>
+                <a href="./Current_Events.html">NAMI @ Emory</a>
+                <a href="./resources.html">Resources</a>
+                <a href="">Newsletter</a>
+                <a href="./login.html">login</a>
+            
+            <a><button>Get Involved!</button></a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
             <!-- add the below as a call to action button-->
             <!-- <button>Get Involved</button> -->
         </div>
         <!-- add the below as a call to action button-->
+         
     </header>  
     
     <div class="body">
         <div>
+            <!-- <h2>Identity specific resources for Nami.E</h2> -->
             <div class="collapsible">
-                <button type="button" onclick="identitySpecificCollapsible()" class="collapsible__button"><h2>Identity specific resources for Nami.E</h2></button>
+                <button type="button" onclick="identitySpecificCollapsible()" class="collapsible__button">Identity Resources</button>
                 <div class="collapsible__content" id="identitySpecificCollapsible">
                     <ul>
                         <li><p>Target Audience: <strong>Women</strong></p>
@@ -56,11 +64,10 @@
 
             </div>
 
-        
+            <!-- <h2>On Campus at Emory</h2> -->
             <div class="collapsible">
-                <button onclick="collapsible()" type="button" class="collapsible__button"><h2>On Campus at Emory</h2></button>
+                <button onclick="collapsible()" type="button" class="collapsible__button">On Campus at Emory</button>
                 <div id="mycollapsible" class="collapsible__content">
-                    <h2>On Campus at Emory</h2>
                     <div class="content">
                         <div class="content"><h3>Time Sensitive/Urgent resources</h3></div>   
                         <ul>
@@ -109,8 +116,10 @@
             <!-- end divider for collabsible below -->
             </div>
 
+
+            <!-- <h2>Off-Campus</h2> -->
             <div class="collapsible">
-                <button type="button" onclick="offCampusCollapsible()" class="collapsible__button"><h2>Off-Campus</h2></button>
+                <button type="button" onclick="offCampusCollapsible()" class="collapsible__button">Off-Campus</button>
                 <div class="collapsible__content" id="offCampusCollapsible">
                     <ul>
                         <li><a href="https://timewellnessga.com/programs/" target="_blank">Time Wellness Georgia <em>Chambless, GA</em></a>
@@ -134,7 +143,7 @@
                             <p>This agency offers an array of services that include behavior counseling, employment, mentoring, dance, therapy, and more.</p>
                         </li>
 
-                        <li><a href="https://silencetheshame.com" target="_blank">Silence The Shame .com</a>
+                        <li><a href="https://silencetheshame.com" target="_blank">Silence The Shame.com</a>
                             <ul>
                                 <li>Run by black women with experience in music industry</li>
                                 <li>Meant to alleviate mental health stigmas found within youn people in BIPOC communities</li>
@@ -145,8 +154,11 @@
                 </div>
             </div>
             
+
+            <!-- <h2>NAMI Resources Internal Use</h2> -->
+
             <div class="collapsible">  
-                <button onclick="resource_collapsible()" type="button" class="collapsible__button"><h2>NAMI Resources Internal Use</h2></button>
+                <button onclick="resource_collapsible()" type="button" class="collapsible__button">NAMI Resources Internal Use</button>
                 <div class="collapsible__content" id="resourcescollapsible">
                     <ul>
                         <li><a href="https://www.nami.org/wp-content/uploads/2023/07/GeorgiaStateFactSheet.pdf" target="_blank">NAMI Mental Health Fact Sheet</a></li>
@@ -159,15 +171,20 @@
                 </div>
             </div>
 
+            <!-- <h2>Cost <em><strong>Insurance Recommended</strong></em></h2> -->
+
             <div class="collapsible">
-                <button type="button" onclick="costCollapsible()" class="collapsible__button"><h2>Cost <em><strong>Insurance Recommended</strong></em></h2></button>  
+                <button type="button" onclick="costCollapsible()" class="collapsible__button">Cost <em><strong>Insurance Recommended</strong></em></button>  
                 <div class="collapsible__content" id="costCollapsible">
                     <p>Test</p>
                 </div>
             </div>
 
+
+            <!-- <h2>No Cost</h2> -->
+
             <div class="collapsible">
-                <button type="button" onclick="noCostCollapsible()" class="collapsible__button"><h2>No Cost</h2></button>
+                <button type="button" onclick="noCostCollapsible()" class="collapsible__button">No Cost</button>
                 <div class="collapsible__content" id="noCostCollapsible">
                     <ul>
                         <li><a href="https://claratel.org/behavioral-health/" target="_blank">Claratel</a>
