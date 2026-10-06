@@ -12,34 +12,29 @@
 //        });
 //     });
 
+// Accordion for resources page
+ var acc = document.getElementsByClassName("collapsible__button");
+ var i;
 
-//My buttons for collapsibles in Resources
-function collapsible(){
-    document.getElementById("mycollapsible").classList.toggle("collapsible__content_show");
-}
-function resource_collapsible(){
-    document.getElementById("resourcescollapsible").classList.toggle("collapsible__content_show");
-}
-function offCampusCollapsible(){
-    document.getElementById("offCampusCollapsible").classList.toggle("collapsible__content_show");
-}
-function identitySpecificCollapsible(){
-    document.getElementById("identitySpecificCollapsible").classList.toggle("collapsible__content_show");
-}
-function costCollapsible(){
-    document.getElementById("costCollapsible").classList.toggle("collapsible__content_show");
-}
-function noCostCollapsible(){
-    document.getElementById("noCostCollapsible").classList.toggle("collapsible__content_show");
-}
-function capsCollapsible(){
-    document.getElementById("capsCollapsible").classList.toggle("collapsible__content_show");
+ for (i = 0; i < acc.length; i++) {
+   acc[i].addEventListener("click", function() {
+     /* Toggle between adding and removing the "active" class,
+     to highlight the button that controls the panel */
+     this.classList.toggle("active");
+
+     /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
 }
 
-//My Buttons for collapsibles in NAMI @ Emory
-function getInvolvedCollapsible(){
-    document.getElementById("getInvolvedCollapsible").classList.toggle("collapsible__content_show");
-}
+
+
+
 
 
 //tponav responsive
