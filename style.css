@@ -88,6 +88,7 @@ header{
     padding-top: 5%;
     /* padding-bottom: 70px; */
     align-items: center;
+    margin-bottom: 50px;
 }
 
 
@@ -253,6 +254,7 @@ p{
     /* beow is content that helps with the appear out of thin air effect */
     display: none;
     overflow: auto;
+    margin-right: 50%;
 } 
 .collapsible__content_right {
     /* THIS IS FOR JSoverflow: hidden;
@@ -293,12 +295,16 @@ p{
     margin-right: 5%;
     height: inherit;
     align-items:flex-end;
-    overflow: auto;
+    overflow: hidden;
+    border-radius: 50%;
 }
 .left_img{
-    margin-right: auto;
+    float: left;
     margin-left: 0%;
     width: 45%;
+    height: inherit;
+    align-items:flex-end;
     position: absolute;
-    overflow: auto;
+    overflow: hidden;
+    border-radius: 50%;
 }
