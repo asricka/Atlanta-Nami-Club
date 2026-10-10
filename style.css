@@ -212,6 +212,23 @@ p{
 
     overflow: hidden;
 }
+.collapsible__button {
+    display: block;
+    background-color: #002878;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    border: none;
+    outline: none;
+    text-align: left;
+    transition: background 0.4s;
+    font-size: 15px;
+
+    overflow: hidden;
+}
 
 /* botton plus sign image */
 .collapsible__button_left::after {
@@ -226,10 +243,17 @@ p{
     float: right;
     transform: scale(1.5);
 }
+.collapsible__button::after {
+    content: '\002b';
+    align-content: middle;
+    float: right;
+    transform: scale(1.5);
+}
 
 /* switch between 0 and 150 overflow when clicked */
 .collapsible__button_left--active + .collapsible__content {display: block;}
-.collapsible__button_right--active + .collapsible__content {display: block;}
+.collapsible__button_right--active + .collapsible__content_right {display: block;}
+.collapsible__button--active + .collapsible__content_reg {display: block;}
 /* styling for the after effects of button image */
 /* .collapsible__button--active{background-color: #5b5c5e;}
 .collapsible__button--active::after{content: "\25b4";} */
@@ -239,6 +263,9 @@ p{
     background-color: #5b5c5e;
 }
 .active, .collapsible__button_right:hover {
+    background-color: #5b5c5e;
+}
+.active, .collapsible__button:hover {
     background-color: #5b5c5e;
 }
 
@@ -270,6 +297,22 @@ p{
     overflow: auto;
     margin-left: 50%;
 } 
+.collapsible__content_reg {
+    /* THIS IS FOR JSoverflow: hidden;
+    max-height: 0;
+    transition: max-height 0.2s ease-out; */
+    padding: 0 15px;
+    font-family: Arial, sans-serif;
+    background: #eeeeee;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    align-items: center;
+    /* beow is content that helps with the appear out of thin air effect */
+    display: none;
+    overflow: auto;
+} 
+
 
 .collapsible h3{
 
