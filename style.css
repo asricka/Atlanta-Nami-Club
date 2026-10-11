@@ -45,6 +45,7 @@ header{
     background-color: #c2dbeb;
     display: flex;
     justify-content:space-between;
+    overflow: hidden;
 }
 
 .navbar ul{
@@ -79,9 +80,53 @@ header{
     padding: 10px;
     position: fixed;
     width: 100vw;
-
     bottom: 0;
+    .wrap{
+        background-color: inherit;
+        color: inherit;
+        min-height: fit-content;
+        display: grid;
+
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto auto auto right left auto;
+        grid-template-areas: 
+            "news news"
+            "feedbackForm feedbackForm"
+            "execImages execImages"
+            "execContact execContact"
+            "donate_foot donate_foot"
+            "NAMITag NAMITag"
+            "Socials Socials";
+    }
+    .logo_footer{
+        align-items: center;
+        float: left;
+        grid-area: NAMITag;
+    }
+    ul{
+        list-style: none;
+        overflow: hidden;
+    }
+    li{
+        display: inline-block;
+        padding:10px;
+    }
+    a{
+        padding: 10px;
+    }
+    a:active{
+        color: #eeeeee;
+    }
+    
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -145,8 +190,6 @@ h1{
     color: #002878;
     text-align: left;
     overflow: hidden;
-
-
 }
 
 h2{
