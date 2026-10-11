@@ -15,26 +15,26 @@ header{
     top: 0;
 
 }
+.logo{
+    float: left;
+    align-items: center;
+}
 .container{
-    display: grid;
-
-    min-height: 100vh;
-    min-height: 100dvh;
     background-color: #c2dbeb;
     color: #333333;
+    display: grid;
+    min-height: 100vh;
+    min-height: 100dvh;
     
-    grid-template-rows: auto 1fr auto;
     grid-template-columns: 100vw 1fr;
+    grid-template-rows: auto 1fr auto;
     grid-template-areas:
         "navbar navbar"
         "body body"
         "footer footer";
     margin-bottom: 1fr;
 }
-.logo{
-    float: left;
-    align-items: center;
-}
+
 
 .navbar{
     grid-area: navbar;
@@ -53,18 +53,18 @@ header{
 }
 .navbar li{
     display: inline-block;
-    padding: 15px;
+    padding: 10px;
 }
 
 .navbar a{
     color: #333333;
     text-align: center;
-    /* padding: 15px; */
+    padding: 10px;
     text-decoration: none;
     display: block;
 }
 
-.navbar li:hover{
+.navbar a:hover{
     background-color: #eeeeee99;
 }
 .navbar a:active{
@@ -77,7 +77,8 @@ header{
     color: #ffffff;
     text-align: center;
     padding: 10px;
-    position: sticky;
+    position: fixed;
+    width: 100vw;
 
     bottom: 0;
 }
@@ -115,7 +116,7 @@ header{
     background-color: #ffffff;
     /* padding-top: 5%; */
     /* padding-bottom: 70px; */
-
+    margin-bottom: 1fr;
     min-height: 100vh;
     min-height: 100dvh;
     /* overflow: hidden; */
@@ -183,6 +184,12 @@ p{
 .divider{
     height: 5px;
     background: linear-gradient(to right, #ffcc00, #ffffff, #ffcc00);
+}
+
+.border{
+    width: 100vw;
+    background-color: #c2dbeb;
+    margin: 0%;
 }
 
 /* For a collapsible */
@@ -354,7 +361,7 @@ p{
 .right_img{
     float: right;
     width: 45%;
-    margin-right: 5%;
+    margin-left: 2.5%;
     height: inherit;
     align-items:flex-end;
     overflow: hidden;
@@ -362,11 +369,13 @@ p{
 }
 .left_img{
     float: left;
-    margin-left: 0%;
+    /* margin-left: 0%; */
+    margin-right: 2.5%;
     width: 45%;
     height: inherit;
     align-items:flex-end;
-    position: absolute;
     overflow: hidden;
     border-radius: 50%;
 }
+
+
