@@ -25,6 +25,7 @@ header{
     display: grid;
     min-height: 100vh;
     min-height: 100dvh;
+    justify-content: space-around;
     
     grid-template-columns: 100vw 1fr;
     grid-template-rows: auto 1fr auto;
@@ -235,6 +236,8 @@ header{
     margin-bottom: 1fr;
     min-height: 100vh;
     min-height: 100dvh;
+    padding-top: 200px;
+    overflow: hidden;
     /* overflow: hidden; */
 }
 
