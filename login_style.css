@@ -95,10 +95,10 @@ header{
     color: #ffffff;
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: sticky;
     /* height: 100px; */
     width: 100vw;
-    bottom: 0;
+    /* bottom: 0; */
     ul{
         list-style: none;
         overflow: hidden;
@@ -227,8 +227,9 @@ header{
     min-height: 100vh;
     background: linear-gradient(to right, #e2e2e2, #c2dceb);
     color: #333333;
+    margin-bottom: 1fr;
     grid-area: body;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .holder{
@@ -301,7 +302,7 @@ p a:hover{
     text-decoration: underline;
 }
 
-.nav .icon{
+.icon{
     display: none;
 }
 
