@@ -6,22 +6,36 @@
             <meta name="viewport" content="width=device-width initial-scale=1">
             <title>NAMI.Emory</title>
             <link rel="stylesheet" href="login_style.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
         </head>
+        
  
     <div class="wrap">
         <header>
+                
                 <div class="nav" id="myNav">
+                    
                     <img class="logo" src="https://www.svgrepo.com/show/483886/brain-illustration-12.svg" width="40" height="40" alt="logo">
+                    <!-- <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div> -->
+                    <button_open id="open-sidebar-button" class="button_open">
+                        <img src="https://www.svgrepo.com/show/522555/hamburger-menu.svg" width="40" height="40">
+                    </button_open>
                     <ul>
+                        <li><a><button_close id="close-sidebar-button" class="button_close"><img src="https://www.svgrepo.com/show/501535/discussion-x.svg" width="40" height="40"></button_close></a></li>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./Current_Events.html">NAMI @ Emory</a></li>
                         <li><a href="./resources.html">Resources</a></li>
                         <li><a href="">Newsletter</a></li>
                         <li><a href="./login.html">login</a></li>
                         <li><button>Get Involved!</button></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="myFunc()">&#9776;</a></li>
                         <!-- <a href="javascript:void(0);" class="icon" onclick="myFunc">&#9776;</a> -->
                     </ul>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunc()">&#9776;</a>
+                    <!-- <a href="javascript:void(0);" class="icon" onclick="myFunc()">&#9776;</a> -->
                     <!-- add the below as a call to action button-->
                     <!-- <button>Get Involved</button> -->
                 </div>
