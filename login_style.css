@@ -13,7 +13,7 @@ header{
 .logo{
     float: left;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 .wrap{
     background-color: #c2dbeb;
@@ -68,7 +68,7 @@ header{
     /* below is the code to make the navbar horizontal */
 
 
-.nav button{
+.nav action{
     padding: 5px;
     background-color: #f8642e;
     color: #333333;
@@ -78,12 +78,13 @@ header{
     transition: all 0.3s ease 0s;
     /* attempt at placing button on the right */
     cursor: pointer;
+    text-align: center;
 }
-.nav button:active{
+.nav action:active{
     color: #ffffff;
 }
 
-.nav button:hover{
+.nav action:hover{
     background-color: #ff2200;
 }
 .nav .icon{
@@ -110,6 +111,7 @@ header{
     }
     a{
         padding: 10px;
+        text-decoration: none;
     }
     a:active{
         color: #eeeeee;
@@ -120,25 +122,106 @@ header{
         min-height: fit-content;
         display: grid;
 
-        grid-template-columns: 1fr auto;
+        grid-template-columns: auto 1fr auto;
         grid-template-rows: auto auto auto auto auto auto;
         grid-template-areas: 
             "news news"
+            "msftForms msftForms"
             "feedbackForm feedbackForm"
-            "execImages execImages"
-            /* "NAMITag NAMITag" */
+            "NAMITag NAMITag"
             "execContact execContact"
             "donate_foot donate_foot"
             "Socials Socials";
     }
+
+    
+    .news{
+        grid-area: news;
+        display: inline-block;
+        button{
+            background-color: #e96434;
+            padding: 5px;
+            color: #333333;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:active{
+            color: #ffffff;
+        }
+    }
+    .suggestions{
+        grid-area: msftForms;
+        display: inline-block;
+        button{
+            color: #333333;
+            background-color: #e96434;
+            padding: 5px;
+            /* border: none; */
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:hover{
+            color: #ffffff;
+        }
+    }
+    .feedbackForm{
+        grid-area: feedbackForm;
+        display: inline-block;
+        button{
+            padding: 5px;
+            border-radius: 50px;
+            background-color: #e96434;
+            color: #333333;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:active{
+            color: #ffffff;
+        }
+    }
     .logo_footer{
         align-items: center;
         /* float: left; */
-        /* grid-area: NAMITag; */
+        grid-area: NAMITag;
+        display: inline-block;
+    }
+    .execContact{
+        grid-area: execContact;
+        display: inline-block;
+        button{
+            padding: 5px;
+            border-radius: 50px;
+            background-color: #e96434;
+            color: #333333;
+            cursor: pointer;
+            transition: all 0.3s ease 0s;
+        }
+        button:active{
+            color: #ffffff;
+        }
+    }
+    .donate{
+        grid-area: donate_foot;
+        display: inline-block;
+        button{
+            padding: 5px;
+            background-color: #e96434;
+            color: #333333;
+            transition: all 0.3s ease 0s;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        button:active{
+            color: #ffffff;
+        }
     }
     .socials{
         grid-area: Socials;
-        float: right;
+        display: inline-block;
+        /* grid-row: 6/ 7; */
+        grid-column: -1;
         i{
             padding: 5px;
         }
@@ -156,64 +239,6 @@ header{
         li{
             padding:5px;
             display: inline-block;
-        }
-    }
-    .news{
-        grid-area: news;
-        display: inline-block;
-        button{
-            background-color: #e96434;
-            padding: 5px;
-            color: #333333;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease 0s;
-        }
-        button:active{
-            color: #ffffff;
-        }
-    }
-    .preguntas{
-        grid-area: feedbackForm;
-        button{
-            padding: 5px;
-            border-radius: 50px;
-            background-color: #e96434;
-            color: #333333;
-            cursor: pointer;
-            transition: all 0.3s ease 0s;
-        }
-        button:active{
-            color: #ffffff;
-        }
-    }
-
-    .execContact{
-        grid-area: execContact;
-        button{
-            padding: 5px;
-            border-radius: 50px;
-            background-color: #e96434;
-            color: #333333;
-            cursor: pointer;
-            transition: all 0.3s ease 0s;
-        }
-        button:active{
-            color: #ffffff;
-        }
-    }
-    .donate{
-        grid-area: donate_foot;
-        button{
-            padding: 5px;
-            background-color: #e96434;
-            color: #333333;
-            transition: all 0.3s ease 0s;
-            border-radius: 50px;
-            cursor: pointer;
-        }
-        button:active{
-            color: #ffffff;
         }
     }
 }
@@ -314,6 +339,7 @@ p a:hover{
     float: right;
 }
 #close-sidebar-button{
+    float: left;
     background-color: none;
     background: none;
     border-radius: 0;
@@ -332,16 +358,17 @@ p a:hover{
     #open-sidebar-button, #close-sidebar-button{
         display: block;
     }
-    .nav{
+    .nav {
         position: fixed;
         top: 0;
         right: -100%;
         height: 100vh;
         width: min(15em, 100%);
         z-index: 10;
-        transition: right 300ms ease-out;
-        border-left: 1px solid var(--hover-color);
+        transition: right .75s ease-out;
+        /* border-left: 1px solid var(--hover-color); */
     }
+
     .logo{
         display: none;
     }
@@ -351,22 +378,24 @@ p a:hover{
     nav.show ~ #overlay{
         display: block;
     }
-    .nav ul{
+    .nav action, ul{
         width:100%;
         flex-direction: column;
         display: flex;
     }
-    .nav li{
+    /* .nav li{
         width: 100%;
         padding-left: 2.5em;
-    }
+    } */
     .nav a{
         width: 100%;
         padding-left: 2.5em;
+        padding-right: 2.5em;
+        text-align: center;
     }
-    .nav a:hover:{
+    /* .nav a:hover:{
         background-color: none;
-    }
+    } */
 
 
 }
