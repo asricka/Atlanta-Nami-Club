@@ -302,32 +302,35 @@ p a:hover{
     text-decoration: underline;
 }
 
-.button_open{
+#open-sidebar-button{
+    display: none;
     background-color: none;
     border-radius: 0;
     border: none;
     cursor: pointer;
+    margin-left: auto;
     padding: 1em;
+    float: right;
 }
-.button_close{
+#close-sidebar-button{
     background-color: none;
+    background: none;
     border-radius: 0;
     border: none;
-    /* display: none; */
+    display: none;
     cursor: pointer;
     padding: 1em;
-
-}
-.button_close a:hover{
-    background-color: none;
 }
 
 
-@media screen and (max-width:600px;) {
-    .li a:not(:first-child){
+
+@media screen and (max-width:800px) {
+    /* .li a:not(:first-child){
         display: none;
+    } */
+    #open-sidebar-button, #close-sidebar-button{
+        display: block;
     }
-
     .nav{
         position: fixed;
         top: 0;
@@ -336,13 +339,18 @@ p a:hover{
         width: min(15em, 100%);
         z-index: 10;
         transition: right 300ms ease-out;
+        border-left: 1px solid var(--hover-color);
     }
-    .show{
+    .nav.show{
         right:0;
+    }
+    nav.show ~ #overlay{
+        display: block;
     }
     .nav ul{
         width:100%;
         flex-direction: column;
+        display: flex;
     }
     .nav li{
         width: 100%;
@@ -351,6 +359,9 @@ p a:hover{
     .nav a{
         width: 100%;
         padding-left: 2.5em;
+    }
+    .nav a:hover:{
+        background-color: none;
     }
 
 

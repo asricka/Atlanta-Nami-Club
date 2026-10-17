@@ -3,13 +3,19 @@ function showForm(formId){
     document.getElementById(FormID).classList.add("active");
 }
 
-function myfunc(){
-    var x = getElementById{"myNav"};
-    if (x.className == "nav"){
-        x.className += " responsive";
-    }else{
-        x.className == "nav";
-    }
+// function myfunc(){
+//     var x = getElementById{"myNav"};
+//     if (x.className == "nav"){
+//         x.className += " responsive";
+//     }else{
+//         x.className == "nav";
+//     }
+// }
+function openSidebar(){
+    document.getElementById('myNav').classList.add('show')
+}
+function closeSidebar(){
+    document.getElementById('myNav').classList.remove('show')
 }
 
 // hamburger.addEventListener('click', () =>{
@@ -22,6 +28,6 @@ function myfunc(){
 //     }
 // })
 
-function showNav(){
-    document.getElementById("myNav").classList.toggle("show");
-}
+// function showNav(){
+//     document.getElementById("myNav").classList.toggle("show");
+// }

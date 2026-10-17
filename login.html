@@ -11,8 +11,12 @@
         
  
     <div class="wrap">
-        <header>
-                
+        <header id="myNav">
+            
+
+                <button id="open-sidebar-button" onclick="openSidebar()">
+                        <img src="https://www.svgrepo.com/show/522555/hamburger-menu.svg" width="40" height="40">
+                    </button>
                 <div class="nav" id="myNav">
                     
                     <img class="logo" src="https://www.svgrepo.com/show/483886/brain-illustration-12.svg" width="40" height="40" alt="logo">
@@ -21,18 +25,18 @@
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div> -->
-                    <button_open id="open-sidebar-button" class="button_open">
+                    <!-- <button_open id="open-sidebar-button" onclick="openSidebar()">
                         <img src="https://www.svgrepo.com/show/522555/hamburger-menu.svg" width="40" height="40">
-                    </button_open>
+                    </button_open> -->
                     <ul>
-                        <li><a><button_close id="close-sidebar-button" class="button_close"><img src="https://www.svgrepo.com/show/501535/discussion-x.svg" width="40" height="40"></button_close></a></li>
+                        <li><a><button id="close-sidebar-button" onclick="closeSidebar()"><img src="https://www.svgrepo.com/show/501535/discussion-x.svg" width="30" height="30"></button></a></li>
                         <li><a href="./index.html">Home</a></li>
                         <li><a href="./Current_Events.html">NAMI @ Emory</a></li>
                         <li><a href="./resources.html">Resources</a></li>
                         <li><a href="">Newsletter</a></li>
                         <li><a href="./login.html">login</a></li>
                         <li><button>Get Involved!</button></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="myFunc()">&#9776;</a></li>
+                        <!-- <li><a href="javascript:void(0);" class="icon" onclick="myFunc()">&#9776;</a></li> -->
                         <!-- <a href="javascript:void(0);" class="icon" onclick="myFunc">&#9776;</a> -->
                     </ul>
                     <!-- <a href="javascript:void(0);" class="icon" onclick="myFunc()">&#9776;</a> -->
@@ -129,5 +133,5 @@
          
     </div>
 
-    <script src="login_script.js"></script>
+    <script src="login_script.js" defer></script>
 </html>
