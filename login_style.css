@@ -13,6 +13,7 @@ header{
 .logo{
     float: left;
     align-items: center;
+    position: relative;
 }
 .wrap{
     background-color: #c2dbeb;
@@ -340,6 +341,9 @@ p a:hover{
         z-index: 10;
         transition: right 300ms ease-out;
         border-left: 1px solid var(--hover-color);
+    }
+    .logo{
+        display: none;
     }
     .nav.show{
         right:0;
