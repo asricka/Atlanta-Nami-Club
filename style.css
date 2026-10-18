@@ -277,7 +277,15 @@ header{
     height: 400px;
     width: 100%;
     background: linear-gradient(to bottom right, #ceebc2 55%, #d28e00 45%);
+
 }
+.sB_text{
+        text-align: center;
+        top: 25%;
+        left: 25%;
+        position: relative;
+        transform: translate(-50%, -50%);
+    }
 
 
 
