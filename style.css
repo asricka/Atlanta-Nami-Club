@@ -250,6 +250,33 @@ header{
     display: none;
 }
 
+
+.hero_img{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    
+}
+.cover{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.hero_text{
+    background-color: #d28e00;
+    text-align: center;
+    position: absolute;
+    color: #333333;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+
+
 .body{
     grid-area: body;
     background-color: #ffffff;
@@ -258,6 +285,8 @@ header{
     margin-bottom: 1fr;
     min-height: 100vh;
     min-height: 100dvh;
+    max-width: 100vw;
+    max-width: 100dvw;
     /* padding-top: 70px; */
     /* overflow:scroll; */
     /* overflow: hidden; */
@@ -329,6 +358,9 @@ p{
     /* padding-right: 5%; */ 
     overflow: hidden;
     /* width: 100%; */
+    max-width: 100vw;
+    width: 100dvw;
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     justify-content: center ;
@@ -349,8 +381,7 @@ p{
     ._img{
         /* position: relative; */
         width: 100%;
-        /* margin: 2.5%; */
-        /* margin-right: 20%; */
+        align-self: center;
         overflow: hidden;
         border-radius: 50%;
         /* align-items: center; */
@@ -365,7 +396,7 @@ p{
             width: 100%;
             /* margin-left: 20%;
             margin-right: 20%; */
-            border: none;
+            /* border: none; */
             outline: none;
             text-align: left;
             transition: background 0.4s;
@@ -375,7 +406,6 @@ p{
         }
         .collapsible__button::after {
             content: '\002b';
-            /* position: fixed; */
             align-content: middle;
             float: right;
             transform: scale(1.5);
@@ -395,7 +425,7 @@ p{
             align-items: center;
             /* beow is content that helps with the appear out of thin air effect */
             display: none;
-            overflow: auto;
+            /* overflow: auto; */
             /* margin-right: 50%; */
         } 
         .collapsible__content_show{
