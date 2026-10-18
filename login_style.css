@@ -7,14 +7,13 @@
 header{
     position: sticky;
     top: 0;
-
+    .logo{
+        float: left;
+        align-items: center;
+        /* position: relative; */
+    }
 }
 
-.logo{
-    float: left;
-    align-items: center;
-    /* position: relative; */
-}
 .wrap{
     background-color: #c2dbeb;
     color: #333333;
