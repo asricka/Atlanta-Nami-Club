@@ -45,7 +45,7 @@ header{
     background-color: #c2dbeb;
     display: flex;
     justify-content:space-between;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .navbar ul{
@@ -255,11 +255,11 @@ header{
     width: 100%;
     height: 200px;
     position: relative;
-    
+    /* overflow: hidden; */
 }
 .cover{
     width: 100%;
-    height: 200px;
+    height: inherit;
     object-fit: cover;
 }
 .hero_text{
@@ -270,8 +270,39 @@ header{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
+
+
+.splitBack{
+    height: 400px;
+    width: 100%;
+    background: linear-gradient(to bottom right, #ceebc2 55%, #d28e00 45%);
+}
+
+
+
+
+
+.hero_video{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    
+}
+.hero_vid{
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+}
+.hero_vid_text{
+    align-items: center;
+    background-color: #d73dcd;
+    color: #333333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 
 
 
