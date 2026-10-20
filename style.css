@@ -277,15 +277,16 @@ header{
     height: 400px;
     width: 100%;
     background: linear-gradient(to bottom right, #ceebc2 55%, #d28e00 45%);
-
-}
-.sB_text{
+    .sB_text{
         text-align: center;
         top: 25%;
         left: 25%;
         position: relative;
+        /* overflow: hidden; */
         transform: translate(-50%, -50%);
     }
+}
+
 
 
 
@@ -293,7 +294,7 @@ header{
 
 .hero_video{
     width: 100%;
-    height: 500px;
+    height: 1000px;
     position: relative;
     
 }
@@ -301,6 +302,7 @@ header{
     width: 100%;
     height: inherit;
     object-fit: cover;
+    bottom: 0;
 }
 .hero_vid_text{
     align-items: center;
