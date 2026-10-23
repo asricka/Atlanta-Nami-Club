@@ -74,15 +74,22 @@ var acc = document.getElementsByClassName("collapsible__button");
 
 
 //tponav responsive
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "nav") {
-    x.className += " responsive";
-  } else {
-    x.className = "nav";
-  }
-}
+// function myFunction() {
+//   var x = document.getElementById("myTopnav");
+//   if (x.className === "nav") {
+//     x.className += " responsive";
+//   } else {
+//     x.className = "nav";
+//   }
+// }
 
-function navDropBtn(){
-    document.getElementById("myDropDwn").classList.toggle("dropdown-content-show");
+// function navDropBtn(){
+//     document.getElementById("myDropDwn").classList.toggle("dropdown-content-show");
+// }
+
+function openSideBar(){
+  document.getElementById('myTopNav').classList.add('show')
+}
+function closeSideBar(){
+  document.getElementById('myTopNav').classList.remove('show')
 }

@@ -11,11 +11,12 @@ html{
 header{
     position: sticky;
     top: 0;
-    
+    background-color: #c2dbeb;
 }
 .logo{
     float: left;
     align-items: center;
+    margin: 10px;
 }
 .container{
     background-color: #c2dbeb;
@@ -44,7 +45,7 @@ header{
     /* padding: 1em; */
     background-color: #c2dbeb;
     display: flex;
-    justify-content:space-between;
+    justify-content:right;
     /* overflow: hidden; */
 }
 
@@ -475,5 +476,39 @@ p{
     }
 }
 
+
+#open-sidebar-button{
+    background: #c2dbeb;
+    cursor: pointer;
+    border: none;
+    padding: 1em;
+    float: right;
+    display: none;
+}
+#close-sidebar-button{
+    display: none;
+    cursor: pointer;
+    border: none;
+    background: #c2dbeb;
+    padding: 1em;
+    float: left;
+}
+
+@media screen and (max-width:800px){
+    #open-sidebar-button, #close-sidebar-button{
+        display: block;
+    }
+    .navbar{
+        right: -100%;
+        position: fixed;
+    }
+    .navbar.show{
+        right: 0;
+    }
+    .navbar li{
+        display: flex;
+        flex-direction: column;
+    }
+}
 
 

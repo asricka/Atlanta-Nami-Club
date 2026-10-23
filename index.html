@@ -12,9 +12,14 @@
     <div class="container">
 
         <header>
-            <div class="navbar">
-                <img class="logo" src="https://www.svgrepo.com/show/483886/brain-illustration-12.svg" width="40" height="40" alt="logo">
+            <img class="logo" src="https://www.svgrepo.com/show/483886/brain-illustration-12.svg" width="40" height="40" alt="logo">
+            <button id="open-sidebar-button" onclick="openSideBar()">
+                <img src="https://www.svgrepo.com/show/522555/hamburger-menu.svg" width="40" height="40">
+            </button>
+            <nav class="navbar" id="myTopNav">
+                
                 <ul>
+                    <li><button id="close-sidebar-button" onclick="closeSideBar()"><img src="https://www.svgrepo.com/show/501535/discussion-x.svg" width="30" height="30"></button></li>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./Current_Events.html">NAMI @ Emory</a></li>
                     <li><a href="./resources.html">Resources</a></li>
@@ -22,11 +27,14 @@
                     <li><a href="./login.html">login</a></li>
                     <li><button>Get Involved!</button></li>
                 </ul>
+                
+                
                 <!-- add the below as a call to action button-->
                 <!-- <button>Get Involved</button> -->
-            </div>
+            </nav>
             <!-- add the below as a call to action button-->
-        </header> 
+            
+        </header>  
 
         
         

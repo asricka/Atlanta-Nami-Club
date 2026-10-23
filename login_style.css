@@ -7,12 +7,13 @@
 header{
     position: sticky;
     top: 0;
-    .logo{
+    background-color: #c2dbeb;
+}
+.logo{
         float: left;
         align-items: center;
-        /* position: relative; */
+        margin: 10px;
     }
-}
 
 .wrap{
     background-color: #c2dbeb;
@@ -36,7 +37,8 @@ header{
     top: 0;
     background-color: #c2dbeb;
     display: flex;
-    justify-content: space-between;
+    justify-content:right;
+    /* float: right; */
     /* padding: 10px; */
 }
 
@@ -329,19 +331,20 @@ p a:hover{
 
 #open-sidebar-button{
     display: none;
-    background-color: none;
-    border-radius: 0;
+    /* background-color: none; */
+    background: #c2dbeb;
+    /* border-radius: 0; */
     border: none;
     cursor: pointer;
-    margin-left: auto;
+    /* margin-left: auto; */
     padding: 1em;
     float: right;
 }
 #close-sidebar-button{
     float: left;
-    background-color: none;
-    background: none;
-    border-radius: 0;
+    /* background-color: indigo; */
+    background: inherit;
+    /* border-radius: 0; */
     border: none;
     display: none;
     cursor: pointer;
@@ -357,6 +360,24 @@ p a:hover{
     #open-sidebar-button, #close-sidebar-button{
         display: block;
     }
+    .nav{
+        position: fixed;
+        right: -100%;
+        width: 10em;
+    }
+    #close-sidebar-button{
+        padding-right: 1em;
+    }
+    .nav.show {
+        right: 0;
+        transition: right  .75s ease-in-out;
+    }
+    .nav li{
+        display: flex;
+        flex-direction: column;
+    }
+}
+    /* 
     .nav {
         position: fixed;
         top: 0;
@@ -365,7 +386,7 @@ p a:hover{
         width: min(15em, 100%);
         z-index: 10;
         transition: right .75s ease-out;
-        /* border-left: 1px solid var(--hover-color); */
+
     }
 
     .logo{
@@ -382,19 +403,14 @@ p a:hover{
         flex-direction: column;
         display: flex;
     }
-    /* .nav li{
-        width: 100%;
-        padding-left: 2.5em;
-    } */
+
     .nav a{
         width: 100%;
         padding-left: 2.5em;
         padding-right: 2.5em;
         text-align: center;
-    }
-    /* .nav a:hover:{
-        background-color: none;
     } */
+
 
 
 }
