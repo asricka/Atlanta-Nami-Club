@@ -12,6 +12,7 @@ header{
     position: sticky;
     top: 0;
     background-color: #c2dbeb;
+    z-index: 1;
 }
 .logo{
     float: left;
@@ -46,7 +47,7 @@ header{
     background-color: #c2dbeb;
     display: flex;
     justify-content:right;
-    /* overflow: hidden; */
+    /* overflow: auto; */
 }
 
 .navbar ul{
@@ -257,11 +258,13 @@ header{
     height: 200px;
     position: relative;
     /* overflow: hidden; */
+    /* z-index: 0; */
 }
 .cover{
     width: 100%;
     height: inherit;
     object-fit: cover;
+    /* overflow: hidden; */
 }
 .hero_text{
     background-color: #d28e00;
@@ -448,6 +451,12 @@ p{
         }
         .collapsible__button::after {
             content: '\002b';
+            align-content: middle;
+            float: right;
+            transform: scale(1.5);
+        }
+        .active::after{
+            content: "\2212";
             align-content: middle;
             float: right;
             transform: scale(1.5);
