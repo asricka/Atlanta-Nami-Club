@@ -253,12 +253,21 @@ header{
 }
 
 
-.hero_img{
+.banner_img{
     width: 100%;
-    height: 400px;
+    height: 500px;
     position: relative;
     /* overflow: hidden; */
     /* z-index: 0; */
+    ._bubble{
+    /* z-index:1 */
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    width: 25%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    }
 }
 .cover{
     width: 100%;
@@ -266,15 +275,24 @@ header{
     object-fit: cover;
     /* overflow: hidden; */
 }
-.hero_text{
+.banner_text{
     background-color: #d28e00;
     text-align: center;
     position: absolute;
     color: #333333;
-    top: 50%;
-    left: 50%;
+    top: 75%;
+    left: 25%;
     transform: translate(-50%, -50%);
 }
+
+/* ._bubble{
+    z-index:1
+    position: absolute;
+    margin-top: 50%;
+    left: 75%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+} */
 
 
 .splitBack{
