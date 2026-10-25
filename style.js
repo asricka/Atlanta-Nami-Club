@@ -35,25 +35,29 @@ var acc = document.getElementsByClassName("collapsible__button");
 
 
 
-
-
-//tponav responsive
-// function myFunction() {
-//   var x = document.getElementById("myTopnav");
-//   if (x.className === "nav") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "nav";
-//   }
-// }
-
-// function navDropBtn(){
-//     document.getElementById("myDropDwn").classList.toggle("dropdown-content-show");
-// }
-
 function openSideBar(){
   document.getElementById('myTopNav').classList.add('show')
 }
 function closeSideBar(){
   document.getElementById('myTopNav').classList.remove('show')
+}
+
+
+
+
+
+let b = 0
+showSlides()
+
+function showSlides(){
+  let j;
+  let slides=document.getElementsByClassName("_bubble");
+  for(j=0; j<slides.length;j++){
+    slides[j].style.display = "none";
+  }
+  b++;
+  if(b>slides.length){b=1;}
+  slides[b-1].style.display="block";
+  setTimeout(showSlides,5000);
+
 }

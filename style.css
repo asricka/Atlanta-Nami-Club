@@ -259,16 +259,36 @@ header{
     position: relative;
     /* overflow: hidden; */
     /* z-index: 0; */
-    ._bubble{
-    /* z-index:1 */
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    width: 25%;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    }
+
+    /* @media{
+        ._bubble img:not(:first-child){
+            display: none;
+        }
+    } */
+    
 }
+._bubble{
+        img{
+        position: absolute;
+        top: 50%;
+        left: 75%;
+        width: 350px;
+        overflow: hidden;
+        height: 350px;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        /* transition:all 1s ease-out 0;  */
+        }
+    
+    }
+.fade{
+        animation-name: fade;
+        animation-duration: .2s;
+    }
+    @keyframes fade {
+        from{opacity: .4}
+        to{opacity: 1}
+    }
 .cover{
     width: 100%;
     height: inherit;
