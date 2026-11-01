@@ -27,7 +27,7 @@ function closeSidebar(){
 //         menuOpen = false;
 //     }
 // })
-
+// 
 // function showNav(){
 //     document.getElementById("myNav").classList.toggle("show");
 // }
