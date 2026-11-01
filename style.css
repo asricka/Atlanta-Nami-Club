@@ -76,6 +76,31 @@ header{
     color: #ffffff;
 }
 
+
+.navbar button{
+    padding: 5px;
+    background-color: #e96434;
+    color: #333333;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    /* attempt at placing button on the right */
+}
+.navbar button:active{
+    color: #ffffff;
+}
+
+.navbar button:hover{
+    background-color: #ff2200;
+}
+
+.navbar .icon{
+    display: none;
+}
+
+
+
 .footer{
     grid-area: footer;
     background-color: #c2dbeb;
@@ -232,27 +257,57 @@ header{
         }
     }
 }
-.navbar button{
-    padding: 5px;
-    background-color: #e96434;
-    color: #333333;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    /* attempt at placing button on the right */
-}
-.navbar button:active{
-    color: #ffffff;
+
+
+
+
+.sec1{
+    .W_I_N{
+        overflow: hidden;
+        clip-path: circle(50% at 50% 50%);
+        /* height: auto; */
+        margin: 2%;
+        float: left;
+        /* width: 560px; */
+        /* border-radius: 50%; */
+        width: 315px;
+
+        height: 315px;
+        iframe{
+            /* align-items: center; */
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .chapInfo{
+        margin-left: 5%;
+        margin-right: 5%;
+        background-color: #c2dbeb;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        grid-template-rows: 1fr;
+
+        grid-template-areas: 
+            "chapterss locations1"
+    }
+    .statss{
+        grid-area: chapterss;
+        text-align: center;
+            
+    }
+    .stats{
+        grid-area: locations1;
+        text-align: center;
+    }
+
+    
+
+
 }
 
-.navbar button:hover{
-    background-color: #ff2200;
-}
 
-.navbar .icon{
-    display: none;
-}
+
+
 
 
 .banner_img{
@@ -404,7 +459,7 @@ header{
 
 .body{
     grid-area: body;
-    background-color: #19b454;
+    background-color: #caf2d9;
     /* padding-top: 5%; */
     /* padding-bottom: 70px; */
     margin-bottom: 1fr;
