@@ -304,8 +304,55 @@ header{
 
 
 }
+.sec2{
+    background-color: #ffffff;
+}
+.sec3{
+    .programming{
+        display: grid;
+        margin: 5%;
+        column-gap: 1em;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr,1fr));
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "heading1 heading2 heading3"
+            "body1 body2 body3"
+    }
 
+    .pcsg{
+        grid-area: heading1;
+        text-align: center;
+        background-color: #c2dbeb;
+        border-radius: 50px;
+    }
+    .pcsg_body{
+        grid-area: body1;
+        text-align: center;
+    }
 
+    .nami_walks{
+        grid-area: heading2;
+        text-align: center;
+        background-color: #c2dbeb;
+        border-radius: 50px;
+    }
+    .nami_walks_body{
+        grid-area: body2;
+        text-align: center;
+    }
+
+    .podcasts{
+        grid-area: heading3;
+        text-align: center;
+        background-color: #c2dbeb;
+        border-radius: 50px;
+    }
+    .podcasts_body{
+        grid-area: body3;
+        text-align: center;
+    }
+
+}
 
 
 
