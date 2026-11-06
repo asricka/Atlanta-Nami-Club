@@ -284,6 +284,8 @@ header{
         margin-right: 5%;
         background-color: #c2dbeb;
         display: grid;
+        row-gap: 1em;
+        column-gap: 1em;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         grid-template-rows: 1fr;
 
@@ -298,6 +300,19 @@ header{
     .stats{
         grid-area: locations1;
         text-align: center;
+    }
+    @media screen and (max-width: 850px){
+        .chapInfo{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            row-gap: 1em;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "chapterss"
+                "locations1"
+        }
     }
 
     
@@ -386,6 +401,59 @@ header{
 }
 .sec4{
     background-color: #ffffff;
+}
+.sec5{
+    .metricMap{
+        display: grid;
+        column-gap: 1em;
+        row-gap: 1em;
+        margin: 5%;
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas:
+            "AmericaMap AmericaMap WorldMap WorldMap"
+            "factSex factEd WfactSex WfactEd"
+            "factRace factClass WfactRace WfactClass"
+    }
+    .AmericaMap{
+        grid-area: AmericaMap;
+        background-color: #0c499c;
+        align-content: center;
+        border-radius: 50px;
+        
+    }
+    .factSex{
+        grid-area: factSex;
+        background-color: #8cc540;
+        align-content: center;
+        p{
+            text-align: center;
+        }
+    }
+    .factEd{
+        grid-area: factEd;
+        background-color: #8cc540;
+        align-content: center;
+        p{
+            text-align: center;
+        }
+    }
+    .factRace{
+        grid-area: factRace;
+        background-color: #8cc540;
+        align-content: center;
+    }
+    .factClass{
+        grid-area: factClass;
+        background-color: #8cc540;
+        align-content: center;
+    }
+    .WorldMap{
+        grid-area: WorldMap;
+        background-color: #0c499c;
+        align-content: center;
+        text-align: center;
+    }
 }
 
 
