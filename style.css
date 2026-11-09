@@ -339,9 +339,8 @@ header{
         grid-area: heading1;
         background: #0c499c;
         border-radius: 50px;
-        text-align: center;
         align-content: center;
-        margin: 15px;
+        padding: 1em;
     }
     .pcsg_body{
         grid-area: body1;
@@ -352,11 +351,10 @@ header{
 
     .nami_walks{
         grid-area: heading2;
-        text-align: center;
         background-color: #0c499c;
         border-radius: 50px;
         align-content: center;
-        margin: 15px;
+        padding: 1em;
     }
     .nami_walks_body{
         grid-area: body2;
@@ -367,10 +365,8 @@ header{
 
     .podcasts{
         grid-area: heading3;
-        /* text-align: center; */
-        /* align-items: center; */
         align-content: center;
-        margin: 15px;
+        padding: 1em;
         background-color: #0c499c;
         border-radius: 50px;
     }
@@ -412,7 +408,7 @@ header{
         margin: 5%;
         
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr auto auto;
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "AmericaMap AmericaMap WorldMap WorldMap"
             "factSex factEd WfactSex WfactEd"
@@ -424,7 +420,7 @@ header{
         background-color: #0c499c;
         align-content: center;
         border-radius: 50px;
-        padding: 50px;
+        padding: 5%;
     }
     .factSex{
         grid-area: factSex;
