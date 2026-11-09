@@ -513,7 +513,112 @@ header{
     
 }
 
+.sec6{
+    .imgSlider{
+        display: grid;
+        column-gap: 5%;
+        row-gap: 0%;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat (3, 1fr);
+        grid-template-areas: 
+            "img1 img2 img3 img4"
+            "content1 content2 content3 content4"
+            "content1 content2 content3 content4";
+    }
+    .img1{
+        grid-area: img1;
+        img{
+            
+            width:100px;
+            height: 100px;
+        }
+    }
+    .content1{
+        grid-area: content1;
+        background-color: #ffffff;
+        border-radius: 50px;
+        padding: 1em;
+        h3{
+            top:0;
+            text-align: center;
+            a{
+                text-decoration: none;
+            }
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .img2{
+        grid-area: img2;
+        img{
+            width:1em;
+            height:1em;
+        }
+    .content2{
+        grid-area: content2;
+        padding: 1em;
+        border-radius: 50px;
+        background: #ffffff;
+        h3{
+            top:0;
+            text-align: center;
+        }
+        p{
+            text-align: center;
 
+        }
+        
+    }
+    .img3{
+        grid-area: img3;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content3{
+        grid-area: content3;
+        background-color: #ffffff;
+        border-radius: 50%;
+        padding: 1em;
+        h3{
+            text-align: center;
+            top:0;
+        }
+        p{
+            padding-top:1em;
+            text-align: center;
+        }
+    }
+    .img4{
+        grid-area:img4;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0%;
+        }
+    }
+    .content4{
+        grid-area: content4;
+        background-color: #ffffff;
+        border-radius: 50px;
+        padding: 1em;
+        h3{
+            top:0;
+            text-align:center;
+        
+        }
+        p{
+            padding-top: 1em;
+            text-align: center;
+        }
+    }
+    }
+
+
+}
 
 .banner_img{
     width: 100%;
