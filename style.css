@@ -412,7 +412,7 @@ header{
         margin: 5%;
         
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 1fr auto auto;
         grid-template-areas:
             "AmericaMap AmericaMap WorldMap WorldMap"
             "factSex factEd WfactSex WfactEd"
