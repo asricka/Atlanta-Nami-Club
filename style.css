@@ -513,7 +513,7 @@ header{
     
 }
 
-.sec6{
+/* .sec6{
     .imgSlider{
         display: grid;
         column-gap: 5%;
@@ -618,8 +618,39 @@ header{
     }
 
 
-}
+} */
 
+.sec6{
+    height: 70vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: row;
+    overflow:scroll;
+    white-space: nowrap;
+    align-content: center;
+    .column{
+        width: 33.3vw;
+
+        img{
+            /* align-content: center; */
+            width:auto;
+            height: 40%;
+        }
+        height: 100%;
+        margin-left: 10px;
+        margin-right: 10px;
+        .content1{
+        padding: 0 10px;
+        p{
+            text-align: center;
+        }
+    }
+    }
+    
+
+    
+}
 .banner_img{
     width: 100%;
     height: 500px;
