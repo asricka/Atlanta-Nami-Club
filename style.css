@@ -103,7 +103,7 @@ header{
 
 .footer{
     grid-area: footer;
-    background-color: #c2dbeb;
+    background-color: #242323;
     color: #ffffff;
     text-align: center;
     padding: 10px;
@@ -258,6 +258,57 @@ header{
     }
 }
 
+.footeralt{
+    grid-area: footer;
+    bottom: 0;
+    background-color: #0c499c;
+    padding: 30px;
+    /* padding: 50px; */
+    ul{
+        /* text-align: center; */
+        list-style: none;
+        display: inline-block;
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    p{
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+    }
+    li{
+        
+        display: block;
+        padding: 2px 15px;
+    }
+    a{
+        color: white;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    .flogo{
+        float: left;
+        top: 50;
+        width: 10%;
+        /* transform: translate(-50%, -50%); */
+        margin-right: 100px;
+    }
+    .socials{
+        float: right;
+        /* margin-top: 100%; */
+        margin-bottom: 0;
+        li{
+            display: inline-block;
+        
+        }
+        a{
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+}
 
 
 
