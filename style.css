@@ -263,14 +263,6 @@ header{
     bottom: 0;
     background-color: #0c499c;
     padding: 30px;
-    height: 222px;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-areas: 
-        "logo body socials"
-        "logo body socials"
-        "logo body socials";
     /* padding: 50px; */
     ul{
         /* text-align: center; */
@@ -296,18 +288,21 @@ header{
     }
     
     .flogo{
-        grid-area: logo;
         float: left;
         top: 50;
-        width: 50%;
+        width: 10%;
         /* transform: translate(-50%, -50%); */
-        /* margin-right: 100px; */
+        margin-right: 100px;
     }
     .socials{
         float: right;
-        /* padding-top: 10%; */
         /* margin-top: 100%; */
-        bottom: 0;
+        margin-bottom: 0;
+        /* padding-bottom: 0; */
+
+        ul{
+            padding-right: 0;
+        }
         li{
             display: inline-block;
         
